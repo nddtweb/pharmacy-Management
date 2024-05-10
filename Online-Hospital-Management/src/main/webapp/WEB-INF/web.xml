@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+    xmlns:xsi= "http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+    http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+    version= "3.1">    
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+    
+   
+    <servlet>
+        <servlet-name>Login</servlet-name>
+        <servlet-class>com.Users.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Login</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Register</servlet-name>
+        <servlet-class>com.Users.UsersInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Register</servlet-name>
+        <url-pattern>/Register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateUser</servlet-name>
+        <servlet-class>com.Users.UpdateUserServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateUser</servlet-name>
+        <url-pattern>/UpdateUser</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserDelete</servlet-name>
+        <servlet-class>com.Users.DeletePatientServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserDelete</servlet-name>
+        <url-pattern>/UserDelete</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddUsers</servlet-name>
+        <servlet-class>com.Admin.AddUsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddUsers</servlet-name>
+        <url-pattern>/AddUsers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindUsers</servlet-name>
+        <servlet-class>com.Admin.FindUsersServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindUsers</servlet-name>
+        <url-pattern>/FindUsers</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateUserAdmin</servlet-name>
+        <servlet-class>com.Admin.AdminUserUpdate</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateUserAdmin</servlet-name>
+        <url-pattern>/UpdateUserAdmin</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AdminUserDelete</servlet-name>
+        <servlet-class>com.Admin.AdminDeleteUser</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AdminUserDelete</servlet-name>
+        <url-pattern>/AdminUserDelete</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>GetDoctors</servlet-name>
+        <servlet-class>com.Appointment.GetDoctorsServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetDoctors</servlet-name>
+        <url-pattern>/AddAppointment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddAppointmenttoDocter</servlet-name>
+        <servlet-class>com.Appointment.AddAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddAppointmenttoDocter</servlet-name>
+        <url-pattern>/AddAppointmenttoDocter</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UserViewAppointment</servlet-name>
+        <servlet-class>com.Appointment.UserViewAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UserViewAppointment</servlet-name>
+        <url-pattern>/UserViewAppointment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateAppointment</servlet-name>
+        <servlet-class>com.Appointment.UpdateAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateAppointment</servlet-name>
+        <url-pattern>/UpdateAppointment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteAppointment</servlet-name>
+        <servlet-class>com.Appointment.DeleteAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteAppointment</servlet-name>
+        <url-pattern>/DeleteAppointment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DoctorViewAppointment</servlet-name>
+        <servlet-class>com.Appointment.DoctorViewAppointmentServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DoctorViewAppointment</servlet-name>
+        <url-pattern>/DoctorViewAppointment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddPrescription</servlet-name>
+        <servlet-class>com.Prescription.AddPrescriptionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddPrescription</servlet-name>
+        <url-pattern>/AddPrescription</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ViewPrescription</servlet-name>
+        <servlet-class>com.Prescription.ViewPrescriptionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ViewPrescription</servlet-name>
+        <url-pattern>/ViewPrescription</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdatePrescription</servlet-name>
+        <servlet-class>com.Prescription.UpdatePrescriptionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdatePrescription</servlet-name>
+        <url-pattern>/UpdatePrescription</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeletePrescription</servlet-name>
+        <servlet-class>com.Prescription.DeletePrescriptionServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeletePrescription</servlet-name>
+        <url-pattern>/DeletePrescription</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AddMedicine</servlet-name>
+        <servlet-class>com.Medicine.AddMedicineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AddMedicine</servlet-name>
+        <url-pattern>/AddMedicine</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FindMedicine</servlet-name>
+        <servlet-class>com.Medicine.FindMedicineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FindMedicine</servlet-name>
+        <url-pattern>/FindMedicine</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>UpdateMedicine</servlet-name>
+        <servlet-class>com.Medicine.UpdatemedicineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UpdateMedicine</servlet-name>
+        <url-pattern>/UpdateMedicine</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteMedicine</servlet-name>
+        <servlet-class>com.Medicine.DeleteMedicineServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteMedicine</servlet-name>
+        <url-pattern>/DeleteMedicine</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    
+    
+
+
+</web-app>
